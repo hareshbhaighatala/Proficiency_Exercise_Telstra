@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		CC4538561E334FEF00D47657 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4538551E334FEF00D47657 /* main.m */; };
 		CC4538591E334FEF00D47657 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4538581E334FEF00D47657 /* AppDelegate.m */; };
-		CC45385C1E334FEF00D47657 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC45385B1E334FEF00D47657 /* ViewController.m */; };
-		CC4538611E334FEF00D47657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4538601E334FEF00D47657 /* Assets.xcassets */; };
+		CCA9609B1E335C6400A35FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA9609A1E335C6400A35FD9 /* Assets.xcassets */; };
+		CCA9609E1E335C9F00A35FD9 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA9609D1E335C9F00A35FD9 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,10 +18,10 @@
 		CC4538551E334FEF00D47657 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC4538571E334FEF00D47657 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC4538581E334FEF00D47657 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CC45385A1E334FEF00D47657 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CC45385B1E334FEF00D47657 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CC4538601E334FEF00D47657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4538651E334FEF00D47657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA9609A1E335C6400A35FD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCA9609C1E335C9F00A35FD9 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CCA9609D1E335C9F00A35FD9 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +54,11 @@
 		CC4538531E334FEF00D47657 /* Proficiency_Exercise_Telstra */ = {
 			isa = PBXGroup;
 			children = (
-				CC4538571E334FEF00D47657 /* AppDelegate.h */,
-				CC4538581E334FEF00D47657 /* AppDelegate.m */,
-				CC45385A1E334FEF00D47657 /* ViewController.h */,
-				CC45385B1E334FEF00D47657 /* ViewController.m */,
-				CC4538601E334FEF00D47657 /* Assets.xcassets */,
-				CC4538651E334FEF00D47657 /* Info.plist */,
+				CC45386B1E33551A00D47657 /* Application Base */,
+				CC45386C1E33551A00D47657 /* Model Classes */,
+				CC45386F1E33551A00D47657 /* ViewControllers */,
+				CCA960991E335C6400A35FD9 /* Media & Assets */,
+				CC45386D1E33551A00D47657 /* Supported Lib */,
 				CC4538541E334FEF00D47657 /* Supporting Files */,
 			);
 			path = Proficiency_Exercise_Telstra;
@@ -71,6 +70,63 @@
 				CC4538551E334FEF00D47657 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC45386B1E33551A00D47657 /* Application Base */ = {
+			isa = PBXGroup;
+			children = (
+				CC4538571E334FEF00D47657 /* AppDelegate.h */,
+				CC4538581E334FEF00D47657 /* AppDelegate.m */,
+				CC4538651E334FEF00D47657 /* Info.plist */,
+			);
+			path = "Application Base";
+			sourceTree = "<group>";
+		};
+		CC45386C1E33551A00D47657 /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Classes";
+			sourceTree = "<group>";
+		};
+		CC45386D1E33551A00D47657 /* Supported Lib */ = {
+			isa = PBXGroup;
+			children = (
+				CC45386E1E33551A00D47657 /* Network Call */,
+			);
+			path = "Supported Lib";
+			sourceTree = "<group>";
+		};
+		CC45386E1E33551A00D47657 /* Network Call */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Network Call";
+			sourceTree = "<group>";
+		};
+		CC45386F1E33551A00D47657 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC4538701E33551A00D47657 /* Custom Cell */,
+				CCA9609C1E335C9F00A35FD9 /* BaseViewController.h */,
+				CCA9609D1E335C9F00A35FD9 /* BaseViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CC4538701E33551A00D47657 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		CCA960991E335C6400A35FD9 /* Media & Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CCA9609A1E335C6400A35FD9 /* Assets.xcassets */,
+			);
+			path = "Media & Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4538611E334FEF00D47657 /* Assets.xcassets in Resources */,
+				CCA9609B1E335C6400A35FD9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC45385C1E334FEF00D47657 /* ViewController.m in Sources */,
+				CCA9609E1E335C9F00A35FD9 /* BaseViewController.m in Sources */,
 				CC4538591E334FEF00D47657 /* AppDelegate.m in Sources */,
 				CC4538561E334FEF00D47657 /* main.m in Sources */,
 			);
@@ -191,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -232,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -244,10 +300,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = Proficiency_Exercise_Telstra/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Proficiency_Exercise_Telstra/Application Base/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "infy.telstra.Proficiency-Exercise-Telstra";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -256,10 +313,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = Proficiency_Exercise_Telstra/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Proficiency_Exercise_Telstra/Application Base/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "infy.telstra.Proficiency-Exercise-Telstra";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -282,6 +340,7 @@
 				CC45386A1E334FEF00D47657 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
