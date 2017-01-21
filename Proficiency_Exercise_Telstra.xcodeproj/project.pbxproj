@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC4538561E334FEF00D47657 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4538551E334FEF00D47657 /* main.m */; };
+		CC4538591E334FEF00D47657 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4538581E334FEF00D47657 /* AppDelegate.m */; };
+		CC45385C1E334FEF00D47657 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC45385B1E334FEF00D47657 /* ViewController.m */; };
+		CC45385F1E334FEF00D47657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC45385D1E334FEF00D47657 /* Main.storyboard */; };
+		CC4538611E334FEF00D47657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4538601E334FEF00D47657 /* Assets.xcassets */; };
+		CC4538641E334FEF00D47657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4538621E334FEF00D47657 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC4538511E334FEF00D47657 /* Proficiency_Exercise_Telstra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proficiency_Exercise_Telstra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4538551E334FEF00D47657 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC4538571E334FEF00D47657 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC4538581E334FEF00D47657 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC45385A1E334FEF00D47657 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CC45385B1E334FEF00D47657 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC45385E1E334FEF00D47657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC4538601E334FEF00D47657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC4538631E334FEF00D47657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC4538651E334FEF00D47657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC45384E1E334FEF00D47657 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC4538481E334FEF00D47657 = {
+			isa = PBXGroup;
+			children = (
+				CC4538531E334FEF00D47657 /* Proficiency_Exercise_Telstra */,
+				CC4538521E334FEF00D47657 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC4538521E334FEF00D47657 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC4538511E334FEF00D47657 /* Proficiency_Exercise_Telstra.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC4538531E334FEF00D47657 /* Proficiency_Exercise_Telstra */ = {
+			isa = PBXGroup;
+			children = (
+				CC4538571E334FEF00D47657 /* AppDelegate.h */,
+				CC4538581E334FEF00D47657 /* AppDelegate.m */,
+				CC45385A1E334FEF00D47657 /* ViewController.h */,
+				CC45385B1E334FEF00D47657 /* ViewController.m */,
+				CC45385D1E334FEF00D47657 /* Main.storyboard */,
+				CC4538601E334FEF00D47657 /* Assets.xcassets */,
+				CC4538621E334FEF00D47657 /* LaunchScreen.storyboard */,
+				CC4538651E334FEF00D47657 /* Info.plist */,
+				CC4538541E334FEF00D47657 /* Supporting Files */,
+			);
+			path = Proficiency_Exercise_Telstra;
+			sourceTree = "<group>";
+		};
+		CC4538541E334FEF00D47657 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC4538551E334FEF00D47657 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC4538501E334FEF00D47657 /* Proficiency_Exercise_Telstra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC4538681E334FEF00D47657 /* Build configuration list for PBXNativeTarget "Proficiency_Exercise_Telstra" */;
+			buildPhases = (
+				CC45384D1E334FEF00D47657 /* Sources */,
+				CC45384E1E334FEF00D47657 /* Frameworks */,
+				CC45384F1E334FEF00D47657 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Proficiency_Exercise_Telstra;
+			productName = Proficiency_Exercise_Telstra;
+			productReference = CC4538511E334FEF00D47657 /* Proficiency_Exercise_Telstra.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC4538491E334FEF00D47657 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Infosys;
+				TargetAttributes = {
+					CC4538501E334FEF00D47657 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CC45384C1E334FEF00D47657 /* Build configuration list for PBXProject "Proficiency_Exercise_Telstra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC4538481E334FEF00D47657;
+			productRefGroup = CC4538521E334FEF00D47657 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC4538501E334FEF00D47657 /* Proficiency_Exercise_Telstra */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC45384F1E334FEF00D47657 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4538641E334FEF00D47657 /* LaunchScreen.storyboard in Resources */,
+				CC4538611E334FEF00D47657 /* Assets.xcassets in Resources */,
+				CC45385F1E334FEF00D47657 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC45384D1E334FEF00D47657 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC45385C1E334FEF00D47657 /* ViewController.m in Sources */,
+				CC4538591E334FEF00D47657 /* AppDelegate.m in Sources */,
+				CC4538561E334FEF00D47657 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC45385D1E334FEF00D47657 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC45385E1E334FEF00D47657 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC4538621E334FEF00D47657 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC4538631E334FEF00D47657 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC4538661E334FEF00D47657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC4538671E334FEF00D47657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC4538691E334FEF00D47657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Proficiency_Exercise_Telstra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "infy.telstra.Proficiency-Exercise-Telstra";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC45386A1E334FEF00D47657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Proficiency_Exercise_Telstra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "infy.telstra.Proficiency-Exercise-Telstra";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC45384C1E334FEF00D47657 /* Build configuration list for PBXProject "Proficiency_Exercise_Telstra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4538661E334FEF00D47657 /* Debug */,
+				CC4538671E334FEF00D47657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC4538681E334FEF00D47657 /* Build configuration list for PBXNativeTarget "Proficiency_Exercise_Telstra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4538691E334FEF00D47657 /* Debug */,
+				CC45386A1E334FEF00D47657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC4538491E334FEF00D47657 /* Project object */;
+}
