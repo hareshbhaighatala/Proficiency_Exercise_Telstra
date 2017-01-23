@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E094B9B1E35CD9F008B7528 /* DataRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E094B9A1E35CD9F008B7528 /* DataRowTableViewCell.m */; };
 		CC4538561E334FEF00D47657 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4538551E334FEF00D47657 /* main.m */; };
 		CC4538591E334FEF00D47657 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4538581E334FEF00D47657 /* AppDelegate.m */; };
 		CCA9609B1E335C6400A35FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA9609A1E335C6400A35FD9 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E094B991E35CD9F008B7528 /* DataRowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRowTableViewCell.h; sourceTree = "<group>"; };
+		6E094B9A1E35CD9F008B7528 /* DataRowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataRowTableViewCell.m; sourceTree = "<group>"; };
 		CC4538511E334FEF00D47657 /* Proficiency_Exercise_Telstra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proficiency_Exercise_Telstra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4538551E334FEF00D47657 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC4538571E334FEF00D47657 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,9 +110,9 @@
 		CC45386F1E33551A00D47657 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CC4538701E33551A00D47657 /* Custom Cell */,
 				CCA9609C1E335C9F00A35FD9 /* BaseViewController.h */,
 				CCA9609D1E335C9F00A35FD9 /* BaseViewController.m */,
+				CC4538701E33551A00D47657 /* Custom Cell */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -117,6 +120,8 @@
 		CC4538701E33551A00D47657 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
+				6E094B991E35CD9F008B7528 /* DataRowTableViewCell.h */,
+				6E094B9A1E35CD9F008B7528 /* DataRowTableViewCell.m */,
 			);
 			path = "Custom Cell";
 			sourceTree = "<group>";
@@ -155,7 +160,7 @@
 		CC4538491E334FEF00D47657 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Infosys;
 				TargetAttributes = {
 					CC4538501E334FEF00D47657 = {
@@ -200,6 +205,7 @@
 			files = (
 				CCA9609E1E335C9F00A35FD9 /* BaseViewController.m in Sources */,
 				CC4538591E334FEF00D47657 /* AppDelegate.m in Sources */,
+				6E094B9B1E35CD9F008B7528 /* DataRowTableViewCell.m in Sources */,
 				CC4538561E334FEF00D47657 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +231,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -272,6 +279,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

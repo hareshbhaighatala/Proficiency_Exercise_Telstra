@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseViewController : UIViewController
+@interface BaseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    UITableView *tblView;
+    UIActivityIndicatorView *progressView;
+    UIRefreshControl *refreshControl;
+    
+    NSMutableArray *arrDataSource;
+}
 
 @end
