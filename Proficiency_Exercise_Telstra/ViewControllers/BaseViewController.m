@@ -84,7 +84,7 @@ static NSString *CellIdentifier = @"Table_Cell";
 
 - (void)fetchJsonDataFromNetwork
 {
-    [self showActivityOverly];
+    //[self showActivityOverly];
     [NetworkDataFetcher fetchDataRowFromServerWithCompletion:^(NSDictionary *response, NSError *error) {
         if (error) {
             NSLog(@"NetworkDataFetcher Error: %@", error);
@@ -98,7 +98,7 @@ static NSString *CellIdentifier = @"Table_Cell";
                 self.title = factData.strScreenTitle;
                 
                 [tblView reloadData];
-                [self hideActivityOverly];
+                //[self hideActivityOverly];
             });
         }
     }];

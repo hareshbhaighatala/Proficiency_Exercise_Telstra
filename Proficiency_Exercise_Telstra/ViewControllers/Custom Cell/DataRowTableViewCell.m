@@ -21,6 +21,8 @@
 {
     if (self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier]) {
         
+        [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+        
         // Initialization code
         [self setupThumbImageView];
         [self setupTitleTextLable];
@@ -43,7 +45,7 @@
     [self.imgvThumb setContentMode:UIViewContentModeScaleAspectFill];
     self.imgvThumb.layer.borderColor = [[UIColor colorWithRed:0.0f green:128.0/255.0f blue:128.0/255.0f alpha:1.0f] CGColor];
     self.imgvThumb.layer.borderWidth = 3.0f;
-    self.imgvThumb.layer.cornerRadius = 8.0f;
+    self.imgvThumb.layer.cornerRadius = 5.0f;
     
     [self.contentView addSubview:self.imgvThumb];
 }
@@ -135,12 +137,12 @@ float const minCellHeight = 100.0f;
 
 - (CGFloat)getHeightOfCell
 {
-    float width = CGRectGetWidth([[UIScreen mainScreen] bounds]) - 140; //self.lblTitleText.frame.size.width
+    float width = CGRectGetWidth([[UIScreen mainScreen] bounds]) - 140;
     NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:self.lblTitleText.text attributes:@{NSFontAttributeName:self.lblTitleText.font}];
     CGRect rectTitle = [attributedTitle boundingRectWithSize:(CGSize){width, CGFLOAT_MAX}
                                                      options:NSStringDrawingUsesLineFragmentOrigin
                                                      context:nil];
-    //self.lblDescriptionText.frame.size.width
+    
     NSAttributedString *attributedDesc = [[NSAttributedString alloc] initWithString:self.lblDescriptionText.text attributes:@{NSFontAttributeName:self.lblDescriptionText.font}];
     CGRect rectDesc = [attributedDesc boundingRectWithSize:(CGSize){width, CGFLOAT_MAX}
                                                    options:NSStringDrawingUsesLineFragmentOrigin
