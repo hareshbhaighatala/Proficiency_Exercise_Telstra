@@ -8,12 +8,15 @@
 
 #import "BaseViewController.h"
 #import "DataRowTableViewCell.h"
+#import "NetworkDataFetcher.h"
 
 @interface BaseViewController ()
 
 @end
 
 @implementation BaseViewController
+
+static NSString *CellIdentifier = @"Table_Cell";
 
 #pragma mark - View Lifecycle Methods
 
@@ -22,6 +25,13 @@
     
     [self setupInitialViews];
     self.title = @"Please Wait...";
+    
+    [self fetchJsonDataFromNetwork];
+    
+    // Pull to refresh
+    refreshControl = [[UIRefreshControl alloc] init];
+    [tblView addSubview:refreshControl];
+    [refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
 }
 
 #pragma mark - Setup UI
@@ -47,6 +57,53 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[tblView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(tblView)]];
 }
 
+- (void)showActivityOverly {
+    
+    UIView *overlyView = [[UIView alloc] initWithFrame:self.view.frame];
+    overlyView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
+    
+    progressView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    progressView.center = overlyView.center;
+    [progressView startAnimating];
+    [overlyView addSubview:progressView];
+    
+    [self.view addSubview:overlyView];
+    [self.view bringSubviewToFront:overlyView];
+}
+
+- (void)hideActivityOverly {
+    [[progressView superview] removeFromSuperview];
+}
+
+- (void)refreshTable {
+    [refreshControl endRefreshing];
+    [self fetchJsonDataFromNetwork];
+}
+
+#pragma mark fetching data
+
+- (void)fetchJsonDataFromNetwork
+{
+    [self showActivityOverly];
+    [NetworkDataFetcher fetchDataRowFromServerWithCompletion:^(NSDictionary *response, NSError *error) {
+        if (error) {
+            NSLog(@"NetworkDataFetcher Error: %@", error);
+        }
+        else {
+            factData = [[FactDetails alloc] initWithDictionary:response];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                // Updateing the UI through main thread
+                self.title = factData.strScreenTitle;
+                
+                [tblView reloadData];
+                [self hideActivityOverly];
+            });
+        }
+    }];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -54,28 +111,37 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 9;//factData.factRows.count;
+    return factData.arrFactRows.count;
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Table_Cell";
     DataRowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
         cell = [[DataRowTableViewCell alloc] initCellWithReuseIdentifier:CellIdentifier];
     }
     
+    RowDetails *row = [factData.arrFactRows objectAtIndex:indexPath.row];
+    [cell setValuesToCell:row];
+    
     return cell;
-    
-    
 }
 
 #pragma mark - Table view delegates
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100.0f;
+    static DataRowTableViewCell *cell = nil;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        cell = [[DataRowTableViewCell alloc] initCellWithReuseIdentifier:CellIdentifier];
+    });
+    
+    RowDetails *row = [factData.arrFactRows objectAtIndex:indexPath.row];
+    [cell setValuesToCell:row];
+    
+    return [cell getHeightOfCell];
 }
 
 @end

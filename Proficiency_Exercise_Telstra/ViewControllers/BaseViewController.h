@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FactDetails.h"
 
 @interface BaseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
@@ -14,7 +15,7 @@
     UIActivityIndicatorView *progressView;
     UIRefreshControl *refreshControl;
     
-    NSMutableArray *arrDataSource;
+    FactDetails *factData;
 }
 
 @end

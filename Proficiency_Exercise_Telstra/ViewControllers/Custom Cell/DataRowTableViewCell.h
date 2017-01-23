@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RowDetails.h"
 
 @interface DataRowTableViewCell : UITableViewCell
 
@@ -15,5 +16,7 @@
 @property (strong, nonatomic) UIImageView *imgvThumb;
 
 - (id)initCellWithReuseIdentifier:(NSString *)reuseIdentifier;
+- (void)setValuesToCell:(RowDetails *)rowData;
+- (CGFloat)getHeightOfCell;
 
 @end

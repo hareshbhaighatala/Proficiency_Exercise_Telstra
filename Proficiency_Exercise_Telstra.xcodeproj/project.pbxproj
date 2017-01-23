@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6E094B9B1E35CD9F008B7528 /* DataRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E094B9A1E35CD9F008B7528 /* DataRowTableViewCell.m */; };
+		6E094BC81E35E3FB008B7528 /* NetworkDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E094BC71E35E3FB008B7528 /* NetworkDataFetcher.m */; };
+		6E094BCE1E35FC1D008B7528 /* FactDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E094BCD1E35FC1D008B7528 /* FactDetails.m */; };
+		6E094BD11E35FC52008B7528 /* RowDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E094BD01E35FC52008B7528 /* RowDetails.m */; };
 		CC4538561E334FEF00D47657 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4538551E334FEF00D47657 /* main.m */; };
 		CC4538591E334FEF00D47657 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4538581E334FEF00D47657 /* AppDelegate.m */; };
 		CCA9609B1E335C6400A35FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA9609A1E335C6400A35FD9 /* Assets.xcassets */; };
@@ -17,6 +20,12 @@
 /* Begin PBXFileReference section */
 		6E094B991E35CD9F008B7528 /* DataRowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRowTableViewCell.h; sourceTree = "<group>"; };
 		6E094B9A1E35CD9F008B7528 /* DataRowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataRowTableViewCell.m; sourceTree = "<group>"; };
+		6E094BC61E35E3FB008B7528 /* NetworkDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkDataFetcher.h; sourceTree = "<group>"; };
+		6E094BC71E35E3FB008B7528 /* NetworkDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkDataFetcher.m; sourceTree = "<group>"; };
+		6E094BCC1E35FC1D008B7528 /* FactDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactDetails.h; sourceTree = "<group>"; };
+		6E094BCD1E35FC1D008B7528 /* FactDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactDetails.m; sourceTree = "<group>"; };
+		6E094BCF1E35FC52008B7528 /* RowDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowDetails.h; sourceTree = "<group>"; };
+		6E094BD01E35FC52008B7528 /* RowDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowDetails.m; sourceTree = "<group>"; };
 		CC4538511E334FEF00D47657 /* Proficiency_Exercise_Telstra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proficiency_Exercise_Telstra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4538551E334FEF00D47657 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC4538571E334FEF00D47657 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +97,10 @@
 		CC45386C1E33551A00D47657 /* Model Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6E094BCC1E35FC1D008B7528 /* FactDetails.h */,
+				6E094BCD1E35FC1D008B7528 /* FactDetails.m */,
+				6E094BCF1E35FC52008B7528 /* RowDetails.h */,
+				6E094BD01E35FC52008B7528 /* RowDetails.m */,
 			);
 			path = "Model Classes";
 			sourceTree = "<group>";
@@ -103,6 +116,8 @@
 		CC45386E1E33551A00D47657 /* Network Call */ = {
 			isa = PBXGroup;
 			children = (
+				6E094BC61E35E3FB008B7528 /* NetworkDataFetcher.h */,
+				6E094BC71E35E3FB008B7528 /* NetworkDataFetcher.m */,
 			);
 			path = "Network Call";
 			sourceTree = "<group>";
@@ -204,8 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA9609E1E335C9F00A35FD9 /* BaseViewController.m in Sources */,
+				6E094BCE1E35FC1D008B7528 /* FactDetails.m in Sources */,
 				CC4538591E334FEF00D47657 /* AppDelegate.m in Sources */,
 				6E094B9B1E35CD9F008B7528 /* DataRowTableViewCell.m in Sources */,
+				6E094BC81E35E3FB008B7528 /* NetworkDataFetcher.m in Sources */,
+				6E094BD11E35FC52008B7528 /* RowDetails.m in Sources */,
 				CC4538561E334FEF00D47657 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
